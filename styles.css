@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap');
 
 @layer base {
 
@@ -10,6 +10,26 @@
 
         font-family: 'Fira Sans', sans-serif;
 
+    }
+
+}
+
+@layer components {
+
+    .btn {
+        @apply bg-blue-400 rounded-lg font-medium py-2 px-4;
+    }
+
+    .line {
+        @apply border-t-[1.15px] m-6 border-gray-400;
+    }
+
+    .list {
+        @apply grid grid-cols-1 mx-10 s:grid-cols-2 l:grid-cols-4 gap-6 s:mx-4 m:mx-28 l:mx-10;
+    }
+
+    .section {
+        @apply font-medium text-3xl;
     }
 
 }
