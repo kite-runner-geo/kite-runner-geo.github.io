@@ -24,6 +24,10 @@
         @apply font-medium text-3xl;
     }
 
+    .img {
+        @apply m:float-left s:h-64 s:w-auto rounded-lg mb-4 w-[64%];
+    }
+
     .line {
         @apply border-t-[1.15px] m-6 border-gray-400;
     }
