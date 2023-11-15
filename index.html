@@ -20,9 +20,11 @@
 
         <h1 class="font-semibold text-4xl">The Kite Runner Geography</h1>
 
+        <h2 class="font-medium text-xl">By: Amishi, Brian, Matthew, Rohan</h2>
+
         <div class="line"></div>
 
-        <h2 class="section">Cities</h2>
+        <h2 class="header">Cities</h2>
 
         <br>
 
@@ -35,7 +37,7 @@
 
         <div class="line"></div>
 
-        <h2 class="section">Landscapes</h2>
+        <h2 class="header">Landscapes</h2>
 
         <br>
 
@@ -50,16 +52,17 @@
 
         <div
             class="
-                absolute bg-[rgba(0,0,0,0.6)] hidden h-screen inset-0 px-[10%] py-[6%] w-screen z-10
+                absolute bg-[rgba(0,0,0,0.6)] hidden h-screen inset-0
+                overflow-y-scroll px-[10%] py-[6%] w-screen z-10
             "
             id="modal"
         >
-            <div class="bg-gray-200 h-full w-full px-36 py-8 rounded-xl">
-                <h2 class="section" id="title"></h2>
+            <div class="bg-gray-200 h-full w-full min-h-[880px] px-36 py-8 rounded-xl">
+                <h2 class="header" id="title"></h2>
                 <div class="flex flex-col h-[80%] items-center justify-between m:flex-row">
                     <div class="basis-[36%] flex flex-col">
-                        <img id="pic_a" class="float-left h-64 rounded-lg mb-4"></img>
-                        <img id="pic_b" class="float-left h-64 rounded-lg mb-4"></img>
+                        <img id="pic_a" class="float-left h-64 min-w-[18rem] rounded-lg mb-4"></img>
+                        <img id="pic_b" class="float-left h-64 min-w-[18rem] rounded-lg mb-4"></img>
                     </div>
                     <div class="basis-[44%] flex flex-col h-[80%] justify-between">
                         <p>Info here</p>
@@ -75,7 +78,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="flex gap-28 items-center justify-center">
+                <div>
                     <button class="btn" onclick="toggle(0)">Close</button>
                 </div>
             </div>
